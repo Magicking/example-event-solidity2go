@@ -53,9 +53,11 @@ func main() {
 
 	log.Printf("Watching events at %v", addr.Hex())
 
-	for e := range sink {
-		log.Printf("PingPongPong: %+v", e)
-	}
+	go func() {
+		for e := range sink {
+			log.Printf("PingPongPong: %+v", e)
+		}
+	}()
 
 	<-done
 	sub.Unsubscribe()
