@@ -1,0 +1,7 @@
+version: '2'
+services:
+  pong-watcher:
+    build: .
+    environment:
+      - RAW_URL=wss://ropsten.eth.6120.eu/ws
+      - CONTRACT_ADDRESS=0x85EAb3977d0C1a6F22Fd0a3e37090a234551D2E0
