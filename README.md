@@ -4,9 +4,9 @@ Example for listen to event from outside of Geth
 
 ## Run
 
-`docker-compose up --build`
+`go run cmd/pongWatcher/main.go --raw-url=wss://ropsten.eth.6120.eu/ws --address=0x85EAb3977d0C1a6F22Fd0a3e37090a234551D2E0`
 
-![docker-compose up --build](https://raw.githubusercontent.com/Magicking/example-event-solidity2go/master/docs/run.gif)
+![go run](https://raw.githubusercontent.com/Magicking/example-event-solidity2go/master/docs/run.gif)
 
 ## Example code
 
