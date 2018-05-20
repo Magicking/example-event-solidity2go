@@ -36,6 +36,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Could not initialize client: %v", err)
 	}
+	log.Printf("Connected to %v", opts.RawURL)
 	addr := common.HexToAddress(opts.ContractAddress)
 	ppf, err := examples.NewPingPongFilterer(addr, c)
 	if err != nil {
@@ -55,6 +56,9 @@ func main() {
 
 	go func() {
 		for e := range sink {
+			log.Printf("TxHash: %+v", e.Raw.TxHash.Hex())
+			log.Printf("BlockNumber: %+v", e.Raw.BlockNumber)
+			log.Printf("Removed event: %+v", e.Raw.Removed)
 			log.Printf("PingPongPong: %+v", e)
 		}
 	}()
