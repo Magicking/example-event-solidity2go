@@ -1,6 +1,6 @@
 # Echo server example
 
-Example of listening events Ethereum events in Golang
+Example of listening Ethereum events in Golang
 
 ## Run
 
@@ -33,5 +33,7 @@ For wrapper generation: [abigen](https://github.com/ethereum/go-ethereum#executa
 ## Donation
 
 BTC: 1MYiMU3GfsgEP4EYHHonG9Fy6DkA1JC3B5
+
 ETH: 0xc8f8371BDd6FB64388F0D65F43A0040926Ee38be
+
 BCC: bitcoincash:qphs9n0apf553jgwawgrx24wfrnutjse45av6k5h8x
